@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="time management app">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/time management app.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
