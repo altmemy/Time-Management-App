@@ -18,7 +18,7 @@ import javafx.scene.control.TextField;
  *
  * @author musht
  */
-public class GreateFXMLController implements Initializable {
+public class CreateAccountFXMLController implements Initializable {
 
     @FXML
     private TextField name;
