@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="312.0" prefWidth="487.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="time.management.app.HomeFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="312.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="time.management.app.HomeFXMLController">
    <children>
       <ImageView fitHeight="312.0" fitWidth="487.0" layoutX="9.0" layoutY="8.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -27,8 +27,8 @@
          </font>
       </PasswordField>
       <Button fx:id="loginBt" defaultButton="true" layoutX="206.0" layoutY="228.0" mnemonicParsing="false" onAction="#logInMethod" opacity="0.84" prefHeight="26.0" prefWidth="66.0" text="log in" wrapText="true" />
-      <Label layoutX="74.0" layoutY="274.0" prefHeight="18.0" prefWidth="196.0" text="I do not have an account" />
-      <Label fx:id="newAccount" layoutX="272.0" layoutY="273.0" onMouseClicked="#greateAccount" prefHeight="20.0" prefWidth="127.0" text=" Create an account" textFill="#0b25cf">
+      <Label layoutX="74.0" layoutY="274.0" prefHeight="18.0" prefWidth="196.0" text="I do not have an acount" />
+      <Label fx:id="newAccount" layoutX="272.0" layoutY="273.0" onMouseClicked="#greateAccount" prefHeight="20.0" prefWidth="127.0" text=" Create an acount" textFill="#0b25cf">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
