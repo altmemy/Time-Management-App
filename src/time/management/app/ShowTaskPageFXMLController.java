@@ -30,9 +30,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
- * FXML Controller class
  *
- * @author musht
+ * @author altmemy
+ * my phone number +905363094803
  */
 public class ShowTaskPageFXMLController implements Initializable {
 
@@ -155,32 +155,6 @@ public class ShowTaskPageFXMLController implements Initializable {
         }
     }
 
-    //
-//    @FXML
-//    private void onComplite(ActionEvent event) {
-//        //change selected row status to complited and rewrite new db to file after update
-//        File file = new File("currentUser.txt");
-//        try {
-//            Scanner input = new Scanner(file);
-//            String userName = input.nextLine();
-//            input.close();
-//            File userFile = new File(userName + ".txt");
-//            Scanner userFileScanner = new Scanner(userFile);
-//            String userFileData = userFileScanner.nextLine();
-//            userFileScanner.close();
-//            userFile.delete();
-//            PrintWriter writer = new PrintWriter(userName + ".txt");
-//            writer.println(userFileData);
-//            table.getItems().get(table.getSelectionModel().getSelectedIndex()).setStatus("Complited");
-//            for (Task task : table.getItems()) {
-//                writer.println(task.getTitle() + "," + task.getStartTime() + "," + task.getEndTime() + "," + task.getDescription() + "," + task.getPriority() + "," + task.getStatus());
-//            }
-//            writer.close();
-//            getDetails();
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
     @FXML
     private void onComplite(ActionEvent event) {
         // Change selected row status to completed and rewrite new db to file after update

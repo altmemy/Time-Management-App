@@ -38,5 +38,10 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Label layoutX="187.0" layoutY="38.0" text="Login page" textFill="#201a8e">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
