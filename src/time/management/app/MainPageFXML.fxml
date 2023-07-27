@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="time.management.app.MainPageFXMLController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar fx:id="menuBar" layoutY="2.0" opacity="0.74">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="addTask" mnemonicParsing="false" onAction="#addTaskMethod" text="Add Task" />
+              <MenuItem fx:id="ShowTask" mnemonicParsing="false" onAction="#ShowTaskMethod" text="Show Task" />
+                  <MenuItem fx:id="out" mnemonicParsing="false" onAction="#logOut" text="log out" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApp" text="exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutMethod" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="table" layoutX="11.0" layoutY="120.0" opacity="0.81" prefHeight="200.0" prefWidth="578.0">
+         <columns>
+            <TableColumn fx:id="title" prefWidth="104.7999906539917" text="title" />
+            <TableColumn fx:id="StartTime" prefWidth="123.20001220703125" text="Start Time" />
+            <TableColumn fx:id="EndTime" prefWidth="95.19999694824219" text="End Time" />
+            <TableColumn fx:id="description" prefWidth="86.39996337890625" text="description" />
+            <TableColumn fx:id="priority" prefWidth="76.800048828125" text="priority" />
+            <TableColumn fx:id="status" prefWidth="92.00006103515625" text="status" />
+         </columns>
+      </TableView>
+      <Label layoutX="221.0" layoutY="42.0" text="Important Task" textFill="#201a8e">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
